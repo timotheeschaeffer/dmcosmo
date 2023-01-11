@@ -3,6 +3,7 @@ External Parameters
 """
 
 
+import pkg_resources
 
 class Bunch(object):
     """
@@ -44,7 +45,7 @@ def cosmo_par():
     'Ol' : 0.679,
     'rho_c' : 2.775e11,
     'h' : 0.6688,
-    'ps': './../files/PCDM.dat',
+    'ps': pkg_resources.resource_filename('dmcosmo', "files/PCDM_Planck.dat"),
     }
     return Bunch(par)
 

@@ -13,6 +13,6 @@ setup(name='dmcosmo',
       author_email='timothee.schaeffer@uzh.ch',
       package_dir = {'dmcosmo' : 'src'},
       packages=['dmcosmo'],
-      package_data={'share':['*'],},
+      package_data={'dmcosmo':['files/*.dat']},
       install_requires=['numpy','scipy', 'joblib', 'tqdm']
 )
